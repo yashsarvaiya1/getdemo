@@ -1,0 +1,64 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+flutter_*.png
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/ServiceDefinitions.json
+ios/Runner.xcworkspace/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/engine/
+
+# Android
+android/.gradle/
+android/app/build/
+android/local.properties
+*.iml
+
+# macOS
+macos/Flutter/Flutter.framework
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/build/
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+windows/build/
+
+# Web
+web/.dart_tool/
+web/build/
+
+# Linux
+linux/flutter/ephemeral/
+linux/build/
+
+# IntelliJ / VS Code / Xcode
+.idea/
+.vscode/
+*.swp
+*.lock
+*.log
+*.tmp
+*.DS_Store
+*.iml
+
+# Others
+*.bak
+*.orig
+*.rej
+*.sublime-workspace
+*.sublime-project
+
+# Coverage & testing
+coverage/
+test-output/
