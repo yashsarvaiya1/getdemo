@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:getdemo/core/app.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await GetStorage.init();
+
   runApp(const MyApp());
 }
 
@@ -15,8 +19,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       initialBinding: AppBinding(),
-      getPages: AppRoutes().pages,
-      initialRoute: AppRoutes.home,
+      getPages: AppRoutes.pages,
+      initialRoute: AppRoutes.dashboard,
       title: 'get_demo',
       theme: ThemeData(
         fontFamily: GoogleFonts.robotoMono().fontFamily,
